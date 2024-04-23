@@ -13,7 +13,11 @@
 
 int main(int argc, char **argv)
 {
+    int pid;
+
     (void) argc;
     (void) argv;
-    ft_printf("Estou no server!\n");
+    pid = getpid();
+    ft_printf("Welcome to server: <%d>\n", pid);
+    while (1)
 }
